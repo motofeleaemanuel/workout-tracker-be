@@ -15,7 +15,7 @@ app.use(
     origin:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000"
-        : "https://workout-tracker.onrender.com",
+        : "https://workout-tracker-wryl.onrender.com",
   })
 );
 app.use(bodyParser.urlencoded({ extended: false }));
