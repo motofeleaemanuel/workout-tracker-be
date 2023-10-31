@@ -7,7 +7,7 @@ const createWorkout = async (req, res) => {
   try {
     const newWorkout = await Workout.create({
       name: workout.name,
-      category: workout.category,
+      category: workout.category.name,
       userId,
     });
     for (let i = 0; i < workout.exercises.length; i++) {
